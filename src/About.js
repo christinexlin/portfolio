@@ -15,8 +15,7 @@ function About(props) {
       <p>
       I'm a designer who loves to build products that solve problems and bring
       joy to others. I'm also a big fan of emojis. <Twemoji className="emoji" text="🤡"/>
-      I'm always learning about design - at the moment, I'm learning how to create
-      animations for the web. </p>
+      I'm currently studying Computer Science at Brown University and I'm always learning about design. </p>
       <p>
       I'm currently based in Taipei, Taiwan but I have lived in Irvine, LA, and Australia.
       </p>
