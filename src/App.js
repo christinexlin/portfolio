@@ -17,17 +17,17 @@ function App() {
         <div className="App">
             <div className='navigation'>
                 <div className="navigation-sub links">
-                    <NavLink exact to="/" className="link" activeClassName="selected">PROJECTS</NavLink>
-                    <NavLink  to="/experiments" className="link" activeClassName="selected">EXPERIMENTS</NavLink>
-                    <NavLink exact to="/about" className="link" activeClassName="selected">ABOUT</NavLink>
+                    <NavLink exact to={process.env.PUBLIC_URL + "/"} className="link" activeClassName="selected">PROJECTS</NavLink>
+                    <NavLink  to={process.env.PUBLIC_URL + "/experiments"} className="link" activeClassName="selected">EXPERIMENTS</NavLink>
+                    <NavLink exact to={process.env.PUBLIC_URL + "/about"} className="link" activeClassName="selected">ABOUT</NavLink>
                 </div>
             </div>
 
-            <Route exact path="/" component={Projects} />
-            <Route path="/experiments" component={Experiments} />
-            <Route path="/about" component={About} />
-            <Route path="/critterpedia" component={Critterpedia} />
-            <Route path="/bluenotes" component={Bluenotes} />
+            <Route exact path={process.env.PUBLIC_URL + "/"} component={Projects} />
+            <Route path={process.env.PUBLIC_URL + "/experiments"} component={Experiments} />
+            <Route path={process.env.PUBLIC_URL + "/about"} component={About} />
+            <Route path={process.env.PUBLIC_URL + "/critterpedia"} component={Critterpedia} />
+            <Route path={process.env.PUBLIC_URL + "/bluenotes"} component={Bluenotes} />
 
 
         </div>
