@@ -1,1 +1,1 @@
-View website at: https://christinexlin.github.io/portfolio/
+View website: https://christinexlin.github.io/portfolio/
