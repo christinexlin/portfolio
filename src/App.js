@@ -26,8 +26,8 @@ function App() {
             <Route exact path={process.env.PUBLIC_URL + "/"} component={Projects} />
             <Route path={process.env.PUBLIC_URL + "/experiments"} component={Experiments} />
             <Route path={process.env.PUBLIC_URL + "/about"} component={About} />
-            <Route path={process.env.PUBLIC_URL + "/critterpedia"} component={Critterpedia} />
-            <Route path={process.env.PUBLIC_URL + "/bluenotes"} component={Bluenotes} />
+            <Route path={process.env.PUBLIC_URL + "/portfolio/critterpedia"} component={Critterpedia} />
+            <Route path={process.env.PUBLIC_URL + "/portfolio/bluenotes"} component={Bluenotes} />
 
 
         </div>
