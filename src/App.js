@@ -8,26 +8,23 @@ import Critterpedia from './Projects/Critterpedia.js';
 import Bluenotes from './Projects/Bluenotes.js';
 import Experiments from './Experiments/Experiments.js';
 
-
-
-
 function App() {
   return (
     <BrowserRouter>
         <div className="App">
             <div className='navigation'>
                 <div className="navigation-sub links">
-                    <NavLink exact to={process.env.PUBLIC_URL + "/"} className="link" activeClassName="selected">PROJECTS</NavLink>
-                    <NavLink  to={process.env.PUBLIC_URL + "/experiments"} className="link" activeClassName="selected">EXPERIMENTS</NavLink>
-                    <NavLink exact to={process.env.PUBLIC_URL + "/about"} className="link" activeClassName="selected">ABOUT</NavLink>
+                    <NavLink basename={process.env.PUBLIC_URL} exact to="/" className="link" activeClassName="selected">PROJECTS</NavLink>
+                    <NavLink  basename={process.env.PUBLIC_URL} to="/experiments" className="link" activeClassName="selected">EXPERIMENTS</NavLink>
+                    <NavLink basename={process.env.PUBLIC_URL} exact to="/about" className="link" activeClassName="selected">ABOUT</NavLink>
                 </div>
             </div>
 
-            <Route exact path={process.env.PUBLIC_URL + "/"} component={Projects} />
-            <Route path={process.env.PUBLIC_URL + "/experiments"} component={Experiments} />
-            <Route path={process.env.PUBLIC_URL + "/about"} component={About} />
-            <Route path={process.env.PUBLIC_URL + "/portfolio/critterpedia"} component={Critterpedia} />
-            <Route path={process.env.PUBLIC_URL + "/portfolio/bluenotes"} component={Bluenotes} />
+            <Route exact basename={process.env.PUBLIC_URL} path="/" component={Projects} />
+            <Route basename={process.env.PUBLIC_URL} path="/experiments" component={Experiments} />
+            <Route basename={process.env.PUBLIC_URL} path="/about" component={About} />
+            <Route basename={process.env.PUBLIC_URL} path="/critterpedia" component={Critterpedia} />
+            <Route basename={process.env.PUBLIC_URL} path="/bluenotes" component={Bluenotes} />
 
 
         </div>
