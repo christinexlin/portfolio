@@ -27,7 +27,7 @@ function Projects(props) {
 
         <div className="projects">
         <Thumbnail
-            link="/portfolio/critterpedia"
+            link="/critterpedia"
             image={critterpedia}
             title="Blather's Critterpedia"
             category={['FRONT-END DEVELOPMENT', 'WEB DESIGN']}
@@ -35,7 +35,7 @@ function Projects(props) {
             icon={tom}
         />
         <Thumbnail
-            link="/portfolio/bluenotes"
+            link="/bluenotes"
             image={bluenotes}
             title="Bluenotes"
             category={['CASE STUDY', 'PRODUCT DESIGN']}

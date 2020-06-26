@@ -7,10 +7,12 @@ import tamagotchi from './tamagotchi.png';
 import Critterpedia from './Projects/Critterpedia.js';
 import Bluenotes from './Projects/Bluenotes.js';
 import Experiments from './Experiments/Experiments.js';
+import ScrollToTop from './ScrollToTop.js';
 
 function App() {
   return (
     <HashRouter basename="/">
+    <ScrollToTop />
         <div className="App">
             <div className='navigation'>
                 <div className="navigation-sub links">
