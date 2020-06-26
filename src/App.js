@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, NavLink, useLocation } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Route, NavLink, useLocation } from 'react-router-dom';
 import './App.css';
 import Projects from './Projects.js';
 import About from './About.js';
@@ -10,7 +10,7 @@ import Experiments from './Experiments/Experiments.js';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter basename="/">
         <div className="App">
             <div className='navigation'>
                 <div className="navigation-sub links">
@@ -23,8 +23,8 @@ function App() {
             <Route exact basename={process.env.PUBLIC_URL} path="/" component={Projects} />
             <Route basename={process.env.PUBLIC_URL} path="/experiments" component={Experiments} />
             <Route basename={process.env.PUBLIC_URL} path="/about" component={About} />
-            <Route basename={process.env.PUBLIC_URL} path="/portfolio/critterpedia" component={Critterpedia} />
-            <Route basename={process.env.PUBLIC_URL} path="/portfolio/bluenotes" component={Bluenotes} />
+            <Route basename={process.env.PUBLIC_URL} path="/critterpedia" component={Critterpedia} />
+            <Route basename={process.env.PUBLIC_URL} path="/bluenotes" component={Bluenotes} />
 
 
         </div>
@@ -41,7 +41,7 @@ function App() {
         </div>
             </div>
         </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
