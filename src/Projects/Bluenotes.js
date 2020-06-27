@@ -27,12 +27,15 @@ function Bluenotes(props) {
   return (
         <div className="project-page">
         <div className="page-header">
+        <div className="page-header-text">
+        <div>
             <h1>Bluenotes</h1>
             <h4>Q&A forum and mentorship platform to support new students at Brown University as they adjust to campus life
             </h4>
-
+            </div>
+</div>
         </div>
-        <div className="page-img">
+        <div className="page-description">
         <img src={t}/>
 
         <img src={b}/>

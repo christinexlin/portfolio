@@ -10,12 +10,12 @@ function Experiments(props) {
 
         <div className="experiments">
         <Thumbnail
-            link="https://www.youtube.com/watch?v=9tKcerYlEps"
             image={signofchange}
             title="Sign of Change"
             category={['ARDUINO', '3D PRINTING']}
             description="A handheld LED stick that can be programmed to display any scrolling message. Used by students during the Providence Climate Strike."
             icon=""
+            external={true}
         />
 
         </div>
