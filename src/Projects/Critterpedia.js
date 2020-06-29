@@ -7,6 +7,7 @@ import butterfly from './Critterpedia/6.png';
 import wasp from './Critterpedia/25.png';
 import butterfly2 from './Critterpedia/4.png';
 import fullpage from './Critterpedia/fullpage.png';
+import illustrations from './Critterpedia/illustrations.png';
 
 function Critterpedia(props) {
   return (
@@ -48,10 +49,13 @@ function Critterpedia(props) {
         </div>
 
         <img src={moodboard}/>
+        <img src={illustrations}/>
         <div className="text-div">
         <h5>TAKING INSPIRATION FROM FIELD GUIDES</h5>
-        <p>For the visual design of the site, I was inspired by the design of field guides
-        and encyclopedias.</p>
+        <p>For the visual design of the site, I was inspired by the design of field guides,
+        encyclopedias, and vintage posters/scientific illustrations. I wanted the
+        homepage of the site to function like an interactive poster.
+        </p>
         </div>
 
         </div>

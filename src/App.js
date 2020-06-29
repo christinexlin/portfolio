@@ -11,7 +11,7 @@ import ScrollToTop from './ScrollToTop.js';
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <BrowserRouter basename="/">
     <ScrollToTop />
         <div className="App">
             <div className='navigation'>
@@ -43,7 +43,7 @@ function App() {
         </div>
             </div>
         </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
