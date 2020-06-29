@@ -11,7 +11,7 @@ import ScrollToTop from './ScrollToTop.js';
 
 function App() {
   return (
-    <BrowserRouter basename="/portfolio">
+    <BrowserRouter basename="/">
     <ScrollToTop />
         <div className="App">
             <div className='navigation'>
