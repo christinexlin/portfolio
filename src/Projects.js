@@ -6,7 +6,6 @@ import tamagotchi2 from './tamagotchi2.png';
 import tom from './Projects/tomnook.png';
 import bluenotes from './Projects/bluenotes.png';
 import fullpage from './Projects/Critterpedia/fullpage.png';
-import zanyface from './zany-face_1f92a.png';
 import p5 from 'p5';
 import Sketch from 'p5';
 
