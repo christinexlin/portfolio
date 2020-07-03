@@ -20,7 +20,7 @@ class Projects extends Component {
     sketch = (s) => {
         let x = 0;
         let y = 0;
-        let emojis = ["🤪","🕹️","🍵","🥴","💭","🇹🇼","🤓","🍳","🥟","🤤","🍣","🤖","🍞"];
+        let emojis = ["🕹️","🍵","💭","🇹🇼","🤓","🍳","🤤","🍣","🤖","🍞"];
         let currIndex = Math.floor(Math.random() * emojis.length);
         let max = emojis.length;
         let currEmoji = emojis[currIndex];
@@ -66,7 +66,7 @@ class Projects extends Component {
                     I'm a product designer and front-end developer based in Taipei.
                     I study Computer Science at Brown University.
                     </h2>
-                    <h6>CLICK TO GET TO KNOW ME</h6>
+                    <h6>CLICK ANYWHERE TO GET TO KNOW ME</h6>
                 </div>
             </div>
 
