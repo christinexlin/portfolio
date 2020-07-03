@@ -110,6 +110,13 @@ p {
   }
 }
 
+canvas {
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index:-1;
+}
+
 @media screen and (max-width: 600px) {
     .intro h1 {
         font-size: 3.5rem;
@@ -146,7 +153,7 @@ p {
 
 @media screen and (min-width: 770px) {
     .intro {
-        height: 87vh;
+        height: 100vh;
     }
     .intro h1 {
         font-size: 5.5rem;
@@ -198,7 +205,6 @@ p {
 
 .project-thumbnail {
     width: 530px;
-    border: white solid 1px;
     padding: 20px 20px 20px 20px;
     margin: 0px 0px 30px 0px;
     border-radius: 5px;
