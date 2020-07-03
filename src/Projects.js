@@ -20,8 +20,9 @@ class Projects extends Component {
     sketch = (s) => {
         let x = 0;
         let y = 0;
-        let emojis = ["🤪","😄"];
+        let emojis = ["🤪","🕹️","🍵","🥴","💭","🇹🇼","🤓","🍳","🥟","🤤","🍣","✌️","🤖","🍞"];
         let currIndex = Math.floor(Math.random() * emojis.length);
+        let max = emojis.length;
         let currEmoji = emojis[currIndex];
 
       s.setup = () => {
@@ -30,12 +31,10 @@ class Projects extends Component {
       }
 
       s.mousePressed = () => {
-          let newIndex;
-          do {
-              newIndex = Math.floor(Math.random() * emojis.length);
+          currIndex = currIndex + 1;
+          if (currIndex >= emojis.length) {
+              currIndex = 0;
           }
-          while (newIndex == currIndex);
-          currIndex = newIndex;
           currEmoji = emojis[currIndex];
       }
 
@@ -43,13 +42,11 @@ class Projects extends Component {
         s.background(255);
         x = s.lerp(x, s.mouseX, 0.05);
         y = s.lerp(y, s.mouseY, 0.05);
-
         s.fill(0);
         s.stroke(0);
-        s.textSize(50);
+        s.textSize(80);
         s.text(currEmoji, x, y);
       }
-
     }
 
     componentDidMount() {
@@ -66,10 +63,10 @@ class Projects extends Component {
                 <div className="intro-sub">
                     <h1>Christine Lin</h1>
                     <h2>Hello!
-                    I'm a product designer and developer based in Taipei.
-                    I currently study Computer Science at Brown University.
+                    I'm a product designer and front-end developer based in Taipei.
+                    I study Computer Science at Brown University.
                     </h2>
-
+                    <h6>CLICK TO GET TO KNOW ME</h6>
                 </div>
             </div>
 

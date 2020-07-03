@@ -14,12 +14,10 @@ function Critterpedia(props) {
         <div className="project-page">
 
         <div className="page-header">
-        <img id="bug" alt="butterfly" src={butterfly}/>
-        <img id="bug-2" alt="wasp" src={wasp}/>
-        <img id="bug-3" alt="butterfly" src={butterfly2}/>
 
         <div className="page-header-text">
             <div>
+            <img id="bug-3" alt="butterfly" src={butterfly2}/>
             <h1>Blather's Critterpedia</h1>
             <h4>A search and filter site to help players discover bugs and fish in Animal Crossing
             New Horizons
