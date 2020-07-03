@@ -20,7 +20,7 @@ class Projects extends Component {
     sketch = (s) => {
         let x = 0;
         let y = 0;
-        let emojis = ["🤪","🕹️","🍵","🥴","💭","🇹🇼","🤓","🍳","🥟","🤤","🍣","✌️","🤖","🍞"];
+        let emojis = ["🤪","🕹️","🍵","🥴","💭","🇹🇼","🤓","🍳","🥟","🤤","🍣","🤖","🍞"];
         let currIndex = Math.floor(Math.random() * emojis.length);
         let max = emojis.length;
         let currEmoji = emojis[currIndex];
