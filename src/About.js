@@ -1,6 +1,5 @@
 import React from "react";
 import Emoji from 'react-emoji-render';
-import christine from './christine.jpg';
 import { NavLink } from 'react-router-dom';
 import diagram from './venndiagram.png';
 
