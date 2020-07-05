@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import './App.css';
 
 class Thumbnail extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     state = {
         image: this.props.image
@@ -39,7 +36,7 @@ class Thumbnail extends Component {
                       <p>{this.props.category[1]}</p>
                   </div>
               <h6>{this.props.description}
-              {this.props.icon != "" ? <img id="icon" src={this.props.icon}/> : null}
+              {this.props.icon !== "" ? <img id="icon" alt="" src={this.props.icon}/> : null}
               </h6>
               </div>
             </Link>

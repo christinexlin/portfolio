@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import a from './Bluenotes/1.png';
 import b from './Bluenotes/2.png';
 import c from './Bluenotes/3.png';
-import d from './Bluenotes/4.png';
 import e from './Bluenotes/5.png';
 import f from './Bluenotes/6.png';
 import g from './Bluenotes/7.png';

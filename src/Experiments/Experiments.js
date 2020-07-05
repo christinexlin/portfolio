@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Thumbnail from '../Thumbnail.js';
 import signofchange from './signofchange.gif';
 import { NavLink } from 'react-router-dom';

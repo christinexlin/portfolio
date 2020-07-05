@@ -15,7 +15,7 @@ function About(props) {
     <div className="page-width">
     <div className="row">
     <div className="about-img col-md">
-    <img src={diagram}/>
+    <img src={diagram} alt="venn diagram"/>
     </div>
     <div className="about-text col-md">
         <div>

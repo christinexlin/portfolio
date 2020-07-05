@@ -6,7 +6,6 @@ import critterpedia from './Projects/critterpedia.png';
 import Emoji from 'react-emoji-render';
 import tom from './Projects/tomnook.png';
 import bluenotes from './Projects/bluenotes.png';
-import fullpage from './Projects/Critterpedia/fullpage.png';
 import visualize from './visualize-actualize.png';
 import p5 from 'p5';
 import Sketch from 'p5';
@@ -26,9 +25,7 @@ class Projects extends Component {
         let captions = ["beep boop @ brown","designing for change", "building playful products",
         "learning japanese","constantly curious","big fan of bread"]
         let currIndex = 0;
-        let max = emojis.length;
         let currEmoji = emojis[currIndex];
-        let text;
 
       s.setup = () => {
         s.createCanvas(s.windowWidth, s.windowHeight);

@@ -2,12 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import screenshot from './Critterpedia/screenshot.png';
-import screenshot2 from './Critterpedia/screenshot-2.png';
 import filterui from './Critterpedia/filterui.png';
 
 import moodboard from './Critterpedia/moodboard.png';
-import butterfly from './Critterpedia/6.png';
-import wasp from './Critterpedia/25.png';
 import butterfly2 from './Critterpedia/4.png';
 import fullpage from './Critterpedia/fullpage.png';
 import illustrations from './Critterpedia/illustrations.png';
