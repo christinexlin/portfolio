@@ -1,7 +1,10 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 import screenshot from './Critterpedia/screenshot.png';
 import screenshot2 from './Critterpedia/screenshot-2.png';
 import filterui from './Critterpedia/filterui.png';
+
 import moodboard from './Critterpedia/moodboard.png';
 import butterfly from './Critterpedia/6.png';
 import wasp from './Critterpedia/25.png';
@@ -12,7 +15,11 @@ import illustrations from './Critterpedia/illustrations.png';
 function Critterpedia(props) {
   return (
         <div className="project-page">
-
+        <div className="navigation black links">
+          <NavLink basename={process.env.PUBLIC_URL} exact to="/" className="link" activeClassName="selected">PROJECTS</NavLink>
+          <NavLink basename={process.env.PUBLIC_URL} to="/experiments" className="link" activeClassName="selected">EXPERIMENTS</NavLink>
+          <NavLink basename={process.env.PUBLIC_URL} exact to="/about" className="link" activeClassName="selected">ABOUT</NavLink>
+        </div>
         <div className="page-header">
 
         <div className="page-header-text">

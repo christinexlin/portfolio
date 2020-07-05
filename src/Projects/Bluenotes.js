@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 import a from './Bluenotes/1.png';
 import b from './Bluenotes/2.png';
 import c from './Bluenotes/3.png';
@@ -26,6 +28,11 @@ import u from './Bluenotes/21.png';
 function Bluenotes(props) {
   return (
         <div className="project-page">
+        <div className="navigation black links">
+          <NavLink basename={process.env.PUBLIC_URL} exact to="/" className="link" activeClassName="selected">PROJECTS</NavLink>
+          <NavLink basename={process.env.PUBLIC_URL} to="/experiments" className="link" activeClassName="selected">EXPERIMENTS</NavLink>
+          <NavLink basename={process.env.PUBLIC_URL} exact to="/about" className="link" activeClassName="selected">ABOUT</NavLink>
+        </div>
         <div className="page-header">
         <div className="page-header-text">
         <div>
