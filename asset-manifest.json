@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.13e0e73b.chunk.css",
-    "main.js": "/static/js/main.d6ca13ed.chunk.js",
-    "main.js.map": "/static/js/main.d6ca13ed.chunk.js.map",
+    "main.js": "/static/js/main.b818dd8d.chunk.js",
+    "main.js.map": "/static/js/main.b818dd8d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e5fc83a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.e5fc83a6.js.map",
-    "static/js/2.357a1bdd.chunk.js": "/static/js/2.357a1bdd.chunk.js",
-    "static/js/2.357a1bdd.chunk.js.map": "/static/js/2.357a1bdd.chunk.js.map",
+    "static/js/2.2b6f680e.chunk.js": "/static/js/2.2b6f680e.chunk.js",
+    "static/js/2.2b6f680e.chunk.js.map": "/static/js/2.2b6f680e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ba7bee31462e7f51a221dc6fc85abf74.js": "/precache-manifest.ba7bee31462e7f51a221dc6fc85abf74.js",
+    "precache-manifest.6ee9b8b957980ec1098c4749ed9d20df.js": "/precache-manifest.6ee9b8b957980ec1098c4749ed9d20df.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.13e0e73b.chunk.css.map": "/static/css/main.13e0e73b.chunk.css.map",
-    "static/js/2.357a1bdd.chunk.js.LICENSE.txt": "/static/js/2.357a1bdd.chunk.js.LICENSE.txt",
+    "static/js/2.2b6f680e.chunk.js.LICENSE.txt": "/static/js/2.2b6f680e.chunk.js.LICENSE.txt",
     "static/media/1.png": "/static/media/1.334c139f.png",
     "static/media/10.png": "/static/media/10.e7f45eb2.png",
     "static/media/11.png": "/static/media/11.ef4f993c.png",
@@ -26,7 +26,6 @@
     "static/media/2.png": "/static/media/2.0fec03cc.png",
     "static/media/20.png": "/static/media/20.5668c745.png",
     "static/media/21.png": "/static/media/21.7765e571.png",
-    "static/media/25.png": "/static/media/25.184c33ce.png",
     "static/media/3.png": "/static/media/3.6ea6e048.png",
     "static/media/4.png": "/static/media/4.da39fe2e.png",
     "static/media/5.png": "/static/media/5.094b16a9.png",
@@ -41,7 +40,6 @@
     "static/media/App.css": "/static/media/gradient-background-04.cf5d5a4c.png",
     "static/media/illustrations.png": "/static/media/illustrations.f47d3dfe.png",
     "static/media/moodboard.png": "/static/media/moodboard.c4bfac76.png",
-    "static/media/screenshot-2.png": "/static/media/screenshot-2.cf0afddb.png",
     "static/media/screenshot.png": "/static/media/screenshot.72e23a8c.png",
     "static/media/signofchange.gif": "/static/media/signofchange.c05c3384.gif",
     "static/media/tomnook.png": "/static/media/tomnook.278e0d8b.png",
@@ -50,8 +48,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e5fc83a6.js",
-    "static/js/2.357a1bdd.chunk.js",
+    "static/js/2.2b6f680e.chunk.js",
     "static/css/main.13e0e73b.chunk.css",
-    "static/js/main.d6ca13ed.chunk.js"
+    "static/js/main.b818dd8d.chunk.js"
   ]
 }
