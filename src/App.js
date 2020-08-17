@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Emoji from 'react-emoji-render';
 import './App.css';
 //Pages
@@ -15,7 +15,7 @@ import ScrollToTop from './ScrollToTop.js';
 class App extends Component {
     render() {
         return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <div>
         <ScrollToTop/>
           <Switch>
                 <Route exact path="/" component={Projects} />
@@ -46,7 +46,7 @@ class App extends Component {
               <p>Made with <Emoji text="🖤"/>by Christine Lin</p>
               </div>
               </div>
-          </BrowserRouter>
+          </div>
         );
     }
 }
