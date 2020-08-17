@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Emoji from 'react-emoji-render';
 import './App.css';
 //Pages
@@ -15,14 +15,15 @@ import ScrollToTop from './ScrollToTop.js';
 class App extends Component {
     render() {
         return (
-          <BrowserRouter basename="/">
+            <div>
+          <Switch>
               <ScrollToTop/>
                 <Route exact path="/" component={Projects} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/critterpedia" component={Critterpedia} />
                 <Route exact path="/bluenotes" component={Bluenotes} />
                 <Route exact path="/formally" component={Formally} />
-
+            </Switch>
               <div className="footer">
 
               <div className="emoji">
@@ -44,7 +45,7 @@ class App extends Component {
               <p>Made with <Emoji text="🖤"/>by Christine Lin</p>
               </div>
               </div>
-          </BrowserRouter>
+          </div>
         );
     }
 }
