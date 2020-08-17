@@ -40,8 +40,8 @@ function Formally(props) {
 
         <Text color='white' height='tall'
         heading="About Formally">
-        <p>Formally is an early-stage startup that is breaking bureaucratic barriers for asylum seekers.
-        We are building an intuitive form-filler for immigration papers and a simple solution for attorneys to manage immigration applications.
+        <p>Formally is an early-stage startup that breaks bureaucratic barriers for asylum seekers.
+        We are building an intuitive form-filler for immigration papers and creating a simple solution for attorneys to manage immigration applications.
         </p>
         </Text>
 
