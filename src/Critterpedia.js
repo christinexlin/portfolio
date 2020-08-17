@@ -32,8 +32,8 @@ function Critterpedia(props) {
         </div>
 
         <div className="page-description">
-        <img src={fullpage}/>
-        <img src={screenshot}/>
+        <img src={fullpage} alt='critterpedia'/>
+        <img src={screenshot} alt='critterpedia'/>
         <div className="text-div">
         <p>I built this website using React and data from the ACNH RESTful API. Players of the switch
         game Animal Crossing New Horizons can discover new critters, learn which fish or bugs
@@ -42,7 +42,7 @@ function Critterpedia(props) {
         such as location, price, and interesting facts.</p>
         </div>
 
-        <img src={filterui}/>
+        <img src={filterui} alt='critterpedia'/>
         <div className="text-div">
         <h5>DESIGNING THE FILTER UI</h5>
         <p>For simple filters (only 2 options to choose from), I used toggle buttons instead of dropdown buttons
@@ -50,8 +50,8 @@ function Critterpedia(props) {
         I used a tab group so users could easily see which filters are active.</p>
         </div>
 
-        <img src={moodboard}/>
-        <img src={illustrations}/>
+        <img src={moodboard} alt='critterpedia'/>
+        <img src={illustrations} alt='critterpedia'/>
         <div className="text-div">
         <h5>TAKING INSPIRATION FROM FIELD GUIDES</h5>
         <p>For the visual design of the site, I was inspired by the design of field guides,

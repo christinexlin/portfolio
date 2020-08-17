@@ -1,52 +1,51 @@
-import React, {Component} from 'react';
-import { BrowserRouter, Route, NavLink } from 'react-router-dom';
+import React, { Component } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Emoji from 'react-emoji-render';
 import './App.css';
+//Pages
 import Projects from './Projects.js';
 import About from './About.js';
-import Critterpedia from './Projects/Critterpedia.js';
-import Bluenotes from './Projects/Bluenotes.js';
-import Experiments from './Experiments/Experiments.js';
+import Critterpedia from './Critterpedia.js';
+import Bluenotes from './Bluenotes.js';
+import Formally from './Formally.js';
+//Components
+import visualize from './Images/visualize-actualize.png';
 import ScrollToTop from './ScrollToTop.js';
-import Emoji from 'react-emoji-render';
 
 class App extends Component {
-
     render() {
         return (
           <BrowserRouter basename="/">
-          <ScrollToTop />
-          <Route exact basename={process.env.PUBLIC_URL} path="/" component={Projects} />
-          <Route basename={process.env.PUBLIC_URL} path="/experiments" component={Experiments} />
-          <Route basename={process.env.PUBLIC_URL} path="/about" component={About} />
-          <Route basename={process.env.PUBLIC_URL} path="/critterpedia" component={Critterpedia} />
-          <Route basename={process.env.PUBLIC_URL} path="/bluenotes" component={Bluenotes} />
+              <ScrollToTop/>
+                <Route exact path="/" component={Projects} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/critterpedia" component={Critterpedia} />
+                <Route exact path="/bluenotes" component={Bluenotes} />
+                <Route exact path="/formally" component={Formally} />
 
+              <div className="footer">
 
+              <div className="emoji">
+                  <Emoji text="💭"/>
+              </div>
 
-          <div className="footer container-fluid">
-            <div className="row">
-              <div className="col-md">
-                  <div className="links">
-                  <NavLink basename={process.env.PUBLIC_URL} exact to="/" activeClassName="selected">PROJECTS</NavLink>
-                  <NavLink basename={process.env.PUBLIC_URL} to="/experiments" activeClassName="selected">EXPERIMENTS</NavLink>
-                  <NavLink basename={process.env.PUBLIC_URL} exact to="/about" activeClassName="selected">ABOUT</NavLink>
+              <div className="intro-icon">
+                  <div className="img-div">
+                      <img src={visualize} alt="visualize and actualize"/>
                   </div>
               </div>
-              <div className="col-md">
-              <div className="links">
-                  <a href="https://github.com/christinexlin">GITHUB</a>
-                  <a href="https://www.linkedin.com/in/christine-lin-01/">LINKEDIN</a>
-                  <a href="https://twitter.com/christinexlin">TWITTER</a>
+
+              <div className="credit">
+                  <div className="footer-links">
+              <a href="https://github.com/christinexlin">GitHub</a>
+              <a href="https://www.linkedin.com/in/christine-lin-01/">LinkedIn</a>
+              <a href="https://twitter.com/christinexlin">Twitter</a>
+              </div>
+              <p>Made with <Emoji text="🖤"/>by Christine Lin</p>
               </div>
               </div>
-            </div>
-            <div className="row">
-                <p className="credit">Made with <Emoji text="🖤"/>by Christine Lin</p>
-            </div>
-          </div>
           </BrowserRouter>
         );
-
     }
 }
 

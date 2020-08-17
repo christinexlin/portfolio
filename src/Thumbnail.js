@@ -1,46 +1,40 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 
 class Thumbnail extends Component {
-
-    state = {
-        image: this.props.image
-    };
-
-    handleMouseMove = () => {
-        this.setState({
-            image: this.props.image2
-        });
+    constructor(props) {
+        super(props);
+        this.state = { image: this.props.image };
     }
+
+    handleMouseEnter = () => {
+        this.setState({ image: this.props.image2});
+    }
+
     handleMouseOut = () => {
-        this.setState({
-            image: this.props.image
-        });
+        this.setState({ image: this.props.image});
     }
 
     render() {
         return (
-          <div className="project-thumbnail">
             <Link to={this.props.link}>
-              <div className="project-image">
-                <img src={this.state.image} onMouseMove={this.handleMouseMove}
+            <div className="thumbnail">
+                <div
+                onMouseEnter={this.handleMouseEnter}
                 onMouseOut={this.handleMouseOut}
-                alt="critterpedia"/>
-              </div>
+                className="project-image">
+                    <img src={this.state.image} alt="project thumbnail"/>
+                </div>
 
-              <div className="project-title">
-              <h5>{this.props.title}</h5>
-                  <div className="project-category">
-                      <p>{this.props.category[0]}</p>
-                      <p>{this.props.category[1]}</p>
-                  </div>
-              <h6>{this.props.description}
-              {this.props.icon !== "" ? <img id="icon" alt="" src={this.props.icon}/> : null}
-              </h6>
-              </div>
-            </Link>
+                <div className="thumbnail-title">
+                    <h5>{this.props.title}</h5>
+                    <p>{this.props.description}
+                    {this.props.icon !== "" ? <img id="icon" alt="" src={this.props.icon}/> : null}
+                    </p>
+                </div>
           </div>
+          </Link>
         );
     }
 

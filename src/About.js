@@ -1,14 +1,13 @@
 import React from "react";
 import Emoji from 'react-emoji-render';
 import { NavLink } from 'react-router-dom';
-import diagram from './venndiagram.png';
+import diagram from './Images/venndiagram.png';
 
 function About(props) {
   return (
       <div>
       <div className="navigation black links">
         <NavLink basename={process.env.PUBLIC_URL} exact to="/" className="link" activeClassName="selected">PROJECTS</NavLink>
-        <NavLink basename={process.env.PUBLIC_URL} to="/experiments" className="link" activeClassName="selected">EXPERIMENTS</NavLink>
         <NavLink basename={process.env.PUBLIC_URL} exact to="/about" className="link" activeClassName="selected">ABOUT</NavLink>
       </div>
     <div className="about-page container-fluid">
@@ -23,7 +22,7 @@ function About(props) {
           <h3>Hi, I'm Christine!</h3>
           <br/>
           <h3>I’m a product designer and front-end developer studying Computer Science at Brown University.
-          I work at the intersection of design <Emoji text="💥"/> and code <Emoji text="⚡️"/>.</h3>
+          I work at the intersection of design<Emoji text="💥"/> and code<Emoji text="⚡️"/>.</h3>
           <br/>
           <h3>I’m passionate about solving problems and building products that spark joy.</h3>
           <br/>
