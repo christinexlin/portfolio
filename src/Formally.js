@@ -9,9 +9,6 @@ import faq from './Formally/faq-recording.gif';
 
 function Formally(props) {
   return (
-      <Switch>
-      <Route exact path="/formally"
-      render={() => (
           <div className="project-page">
               <div className="navigation black links">
                 <NavLink basename={process.env.PUBLIC_URL} exact to="/" className="link" activeClassName="selected">PROJECTS</NavLink>
@@ -129,9 +126,6 @@ function Formally(props) {
               as I was able to use my skills to support Formally's mission of breaking bureaucratic barriers and making our world more accessible.</p>
               </Text>
               </div>
-
-      )}/>
-         </Switch>
   );
 }
 
