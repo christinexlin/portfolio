@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Emoji from 'react-emoji-render';
 import './App.css';
 //Pages
@@ -16,6 +16,7 @@ class App extends Component {
     render() {
         return (
         <div>
+        <BrowserRouter>
         <ScrollToTop/>
           <Switch>
                 <Route exact path="/" component={Projects} />
@@ -24,6 +25,7 @@ class App extends Component {
                 <Route path="/bluenotes" component={Bluenotes} />
                 <Route path="/formally" component={Formally} />
             </Switch>
+        </BrowserRouter>
 
               <div className="footer">
 
