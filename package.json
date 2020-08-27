@@ -12,7 +12,6 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "framer-motion": "^1.11.1",
-    "ghspa": "^1.0.0",
     "p5": "^1.0.0",
     "react": "^16.13.1",
     "react-device-detect": "^1.13.1",

@@ -6,7 +6,7 @@ class Text extends Component {
         return (
             <div className={this.props.background === 'dark' ? "text-div-background dark" : "text-div-background"}
             style={{backgroundColor: this.props.color}}>
-            <div className={this.props.height === 'tall' ? "text-div container padding text-div-tall" : "text-div container padding"}>
+            <div className="text-div container padding">
             <div className="row">
                 <div className="col-md-5">
                     <h4>{this.props.heading}</h4>

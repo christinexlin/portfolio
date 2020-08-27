@@ -10,6 +10,8 @@ import FadeIn from './FadeIn.js';
 import bluenotes from './Bluenotes/bluenotes.png';
 import formally from './Formally/formally-thumbnail.png';
 import formally2 from './Formally/formally-thumbnail-2.png';
+import raisesocial from './RaiseSocial/landing.png';
+import raisesocial2 from './RaiseSocial/landing2.png';
 
 class Projects extends Component {
     constructor(props) {
@@ -152,6 +154,19 @@ class Projects extends Component {
                 description="Simplifying the asylum application process"
             />
             </FadeIn>
+
+            <FadeIn>
+            <Thumbnail
+                link="/raisesocial"
+                image={raisesocial2}
+                image2={raisesocial}
+                title="Raise Social"
+                category={['PRODUCT DESIGN']}
+                size="large"
+                description="Building a socially-conscious social media platform"
+            />
+            </FadeIn>
+
             <FadeIn>
             <Thumbnail
                 link="/bluenotes"

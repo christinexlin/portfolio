@@ -8,6 +8,7 @@ import About from './About.js';
 import Critterpedia from './Critterpedia.js';
 import Bluenotes from './Bluenotes.js';
 import Formally from './Formally.js';
+import RaiseSocial from './RaiseSocial.js';
 //Components
 import visualize from './Images/visualize-actualize.png';
 import ScrollToTop from './ScrollToTop.js';
@@ -24,6 +25,7 @@ class App extends Component {
                 <Route path="/critterpedia" component={Critterpedia} />
                 <Route path="/bluenotes" component={Bluenotes} />
                 <Route path="/formally" component={Formally} />
+                <Route path="/raisesocial" component={RaiseSocial} />
             </Switch>
         </BrowserRouter>
 
