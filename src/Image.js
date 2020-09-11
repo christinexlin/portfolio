@@ -5,11 +5,15 @@ class Image extends Component {
     render() {
         if (this.props.type === 'single') {
         return (
+            <div className={this.props.padding + ' iterations'}
+            style={{ backgroundColor: this.props.color || '#f6f6f6'}}>
             <div>
-            <h4>{this.props.title}</h4>
-            <div className='display image-component'
-            style={{maxWidth: this.props.width}}>
-            <img src={this.props.src} alt={this.props.alt}/>
+                <h4>{this.props.title}</h4>
+                <div className='image-component'
+                style={{maxWidth: this.props.width}}>
+                <img src={this.props.src} alt={this.props.alt}/>
+                <p className="caption">{this.props.caption}</p>
+            </div>
             </div>
             </div>
         );
@@ -21,7 +25,7 @@ class Image extends Component {
                 <div className='row'>
                     <div className='col-md-9'>
                         <div className="mockup-container">
-                        <img className='simple-mockup' src={this.props.src} alt={this.props.alt}/>
+                        <img className={this.props.mockup} src={this.props.src} alt={this.props.alt}/>
                         </div>
                     </div>
 
@@ -37,7 +41,7 @@ class Image extends Component {
     if (this.props.type === 'iterations') {
         return (
         <div className={this.props.padding + ' iterations'}
-        style={{ backgroundColor: this.props.color || '#f6f6f6'}}>
+        style={{ backgroundColor: this.props.color || '#f5f5f5'}}>
         <div>
         <h4>{this.props.title}</h4>
             <img src={this.props.src} alt={this.props.alt}/>

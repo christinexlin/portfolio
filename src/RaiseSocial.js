@@ -6,13 +6,19 @@ import Header from './Header.js';
 import Image from './Image.js';
 import landing from './RaiseSocial/landing.png';
 import profile from './RaiseSocial/profilepage.png';
-import interaction from './RaiseSocial/interactions.png';
 import interactionpage from './RaiseSocial/interactionpage.png';
 import tweet from './RaiseSocial/tweet.png';
 import profilemockup from './RaiseSocial/profilepagemockup.png';
 import lowfidelity from './RaiseSocial/lowfidelity.png';
+import lowfidelityprofile from './RaiseSocial/lowfidelityprofile.png';
 import branding from './RaiseSocial/branding.png';
 import booking from './RaiseSocial/booking.png';
+import user from './RaiseSocial/userpersona.png';
+import userstory from './RaiseSocial/userstory.png';
+import iteration2 from './RaiseSocial/iteration2.png';
+import iteration3 from './RaiseSocial/iteration3.png';
+import final from './RaiseSocial/finaldecision.png';
+import modal from './RaiseSocial/modaliteration.png';
 
 function RaiseSocial(props) {
   return (
@@ -28,77 +34,105 @@ function RaiseSocial(props) {
               tagline='Building a socially-conscious social media platform'
               url=''
               role='Product Designer'
-              team="Cara Vo, Eashan Mathur, Mia O'Brien, Dennis Bae, Sai Harika"
-              timeline='9 weeks'
+              team="Cara Vo, Eashan Mathur, Mia O'Brien, Dennis Bae, Sai Harika, Joshua Kaplan"
+              timeline='July-Sept 2020 (9 weeks)'
               />
 
-              <div className="project-page-text">
-              <h6>Note: This project is currently in progress</h6>
+              <div className='full-image'>
+              <img src={profilemockup} alt='mockup'/>
               </div>
 
-              <DisplayText background='dark' color='#1E1E1E' height='70vh'
+              <DisplayText color='white' height='10vh'
               heading="">
+              <h2>Raise.social is a fundraising platform that lets you offer mentorship services
+              (e.g. resume reviews, coffee chats) in return for donations to a charity.
+              </h2><br/>
+              </DisplayText>
 
-              <h3>Every day, we see friends advocate for social movements on social media.
+              <div className='video'>
+              <iframe title='Raise Social demo' width="100%" height="500" src="https://www.youtube.com/embed/hWSHdJRA8Xg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe>
+              </div>
+
+              <Text background='dark' color='#1E1E1E' height='tall'
+              heading='Understanding the problem'>
+              <h5>Young people want to support causes they care about, but most
+              are limited in their power to give what non-profits need the most: money. </h5><br/><br/>
+
+              <h5>Every day, we see friends advocate for social movements on social media.
               We see mentors offer resume and portfolio reviews in exchange for non-profit donations.
-              </h3>
+              </h5>
 
               <div className='screenshot'>
                 <img src={tweet} alt='tweet'/>
               </div>
 
-              <h3>In 2020, now is the time to fill the whitespace of impact-driven interaction that's
-              been ignored by Big Tech.</h3><br/>
-              </DisplayText>
-
-              <div className='full-image'>
-              <img src={profilemockup} alt='tweet'/>
-              </div>
-
-              <DisplayText color='white' height='10vh'
-              heading="">
-              <h2>Raise.social is a fundraising platform that lets fundraisers charge for
-              interactions (e.g. coffee chats, resume reviews, mock interviews) in return for donations to a cause.
-              </h2><br/>
-              </DisplayText>
-
-              <Text background='dark' color='#1E1E1E' height='tall'
-              heading='Defining the problem'>
-              <h6>THE PROBLEM</h6>
-              <h4>We believe that young people want to support causes they care about, but most
-              are limited in their power to give what non-profits need the most: money. </h4><br/><br/>
-
-              <h6>OUR MISSION</h6>
-              <h4>We want to energize the non-profit and philanthropy sector by building
-              the most socially-conscious social media platform of the 21st century.</h4><br/><br/>
-
-              <h6>OUR VALUE PROPOSITION</h6>
-              <h4>Raise.social lets anyone generate sustained donations for their cause
-              and build their socio-political brand.</h4>
+              <h5>80% of Gen Z say they use social media to talk about issues they care about.
+              In 2020, now is the time to fill the whitespace of impact-driven interaction that's been ignored by Big Tech.</h5>
               </Text>
 
               <Text color='white' height='tall'
               heading='Talking to users'>
-              <h4>Through surveys and interviews, we talked to college students and new graduates
+              <h5>We talked to college students and new graduates (25+ survey responses, 5 interviews)
               about their experiences with donating. Most people donated infrequently, typically
-              once a month or a few times a year. </h4><br/>
-              <h4>Almost everyone expressed
-              a desire to donate more consistently, but said they lacked the financial means to do so.</h4>
+              once a month or a few times a year. Almost everyone expressed
+              a desire to donate more consistently.</h5><br/>
+
+              <h6>WHY DON'T PEOPLE DONATE AS OFTEN AS THEY WOULD LIKE?</h6>
+              <ul>
+                <li>Aren't financially able to give money regularly</li>
+                <li>Feel like their donation is too small to make an impact</li>
+                <li>Don’t know how the organization will use the donation</li>
+              </ul>
+
+              <h5 className='quote'>“A lot of volunteer opportunities I would have pursued would have been in person.
+              I’m also waiting to reach more financial stability in order to donate more regularly to multiple causes.”</h5>
               </Text>
 
-              <Image type='iterations' color='#BFBFBF' title='Low-Fidelity Wireframes'
+              <Image type='single' color='#f5f5f5' title='Creating user stories' width='800px'
+              padding='top'
+              src={user} alt="user personas"/>
+
+              <Image type='single' color='#f5f5f5' title='' width='800px'
+              padding='bottom' caption='Prioritizing features'
+              src={userstory} alt="user stories"/>
+
+              <Image type='iterations' color='#ECECEC' title='Low-Fidelity Wireframes'
               padding='top'
               src={lowfidelity} alt="low-fidelity wireframes"/>
 
-              <Image type='iterations' color='#BFBFBF' title='Interaction Card Iterations'
-              padding='bottom'
-              src={interaction} alt="interaction iterations"/>
+              <Image type='iterations' color='#ECECEC' title=''
+              padding='bottom'  caption='Low-fidelity wireframe of profile page'
+              src={lowfidelityprofile} alt="interaction iterations"/>
+
+              <Image type='double' color='#ECECEC'
+              title='First Iteration' padding='top'
+              src={iteration2} alt="iteration1">
+              <p className='blue'>“Can’t tell this is a fundraiser”</p>
+              </Image>
+
+              <Image type='double' color='#ECECEC'
+              title='Second Iteration' padding='bottom'
+              src={iteration3} alt="iteration2">
+              <p className='blue'>“No clear connection between fundraiser and services”</p>
+              </Image>
+
+              <Image type='iterations' color='#ECECEC'
+              title='Final design decisions' padding='top'
+              src={final} alt="final iteration">
+              </Image>
+
+              <Image type='iterations' color='#ECECEC'
+              title='Switch from modal to full page' padding='bottom'
+              src={modal} alt="final iteration">
+              </Image>
+
 
               <Image type='iterations'
               title='Typography and Visual Identity'
               src={branding} alt="typography and logo"/>
 
-              <Image type='double' src={profile} padding='top'
+              <Image type='double' src={profile} padding='top' mockup='simple-mockup'
               title='View a fundraiser profile'>
               <p>Primary User Tasks</p>
               <ul>
@@ -112,7 +146,7 @@ function RaiseSocial(props) {
               </ul>
               </Image>
 
-              <Image type='double' src={interactionpage}
+              <Image type='double' src={interactionpage} mockup='simple-mockup'
               title='View an interaction'>
               <p>Primary User Tasks</p>
               <ul>
@@ -121,7 +155,7 @@ function RaiseSocial(props) {
               </ul>
               </Image>
 
-              <Image type='double' src={booking} padding='bottom'
+              <Image type='double' src={booking} padding='bottom' mockup='simple-mockup'
               title='Book an interaction'>
               <p>Clicking on book leads to a Calendly pop-up that allows the
               user to schedule the interaction.</p><br/>

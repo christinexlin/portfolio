@@ -425,6 +425,10 @@ a:hover {
     background-color: white;
 }
 
+.quote {
+    color: #407BFF;
+}
+
 .space {
     display: inline-block;
     height: 0.05em;
@@ -735,7 +739,6 @@ canvas {
 }
 
 .full-image {
-    padding: 80px 0px 0px 0px;
     display: flex;
     justify-content: center;
 }
@@ -757,6 +760,15 @@ box-shadow:         0px 0px 21px 0px rgba(50, 50, 50, 0.18);
     padding: 0px 60px;
 }
 
+.video {
+    margin: auto;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
 .double {
     padding: 20px 60px;
 }
@@ -766,11 +778,20 @@ box-shadow:         0px 0px 21px 0px rgba(50, 50, 50, 0.18);
 }
 
 .top {
-    padding: 80px 60px 0px 60px;
+    padding: 60px 60px 20px 60px;
 }
 
 .bottom {
-    padding: 0px 60px 80px 60px;
+    padding: 20px 60px 80px 60px;
+}
+
+.none {
+    padding: 0;
+}
+
+.blue {
+    color: #407BFF;
+    font-weight: 600;
 }
 
 #subtitle {
