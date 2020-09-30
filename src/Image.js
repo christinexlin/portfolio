@@ -8,7 +8,7 @@ class Image extends Component {
             <div className={this.props.padding + ' iterations'}
             style={{ backgroundColor: this.props.color || '#f6f6f6'}}>
             <div>
-                <h4>{this.props.title}</h4>
+                {this.props.title && <h4>{this.props.title}</h4>}
                 <div className='image-component'
                 style={{maxWidth: this.props.width}}>
                 <img src={this.props.src} alt={this.props.alt}/>

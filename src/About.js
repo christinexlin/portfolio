@@ -19,19 +19,24 @@ function About(props) {
     <div className="about-text col-md">
         <div>
             <div className="first">
-          <h3>Hi, I'm Christine!</h3>
+          <h4>Hi, I'm Christine!</h4>
           <br/>
-          <h3>I’m a product designer and front-end developer studying Computer Science at Brown University.
-          I work at the intersection of design<Emoji text="💥"/> and code<Emoji text="⚡️"/>.</h3>
+          <h4>I’m a product designer and front-end developer studying CS at Brown University.</h4>
           <br/>
-          <h3>I’m passionate about solving problems and building products that spark joy.</h3>
+          <h4>I'm passionate about building learning communities—I created
+          a 13-week product design curriculum and I'm currently helping 50+ students
+          learn design @ <a target="_blank" rel="noopener noreferrer"
+          href="https://www.notion.so/Product-Classroom-Fall-2020-8b5faeaa590444a996d5233e462c7e4f">
+          Product Classroom</a>.</h4>
           <br/>
+          <h4>I'm also currently designing the virtual campus tour experience @
+          <a href="https://www.adoraexperiences.com/index.html" target="_blank"
+          rel="noopener noreferrer"> Adora</a>.</h4>
           </div>
           <div className="second">
           <br/>
-          <p>CURRENTLY<span className="space"></span></p><p>UI/UX Intern @ Formally</p>
           <br/>
-          <p>OPEN TO COLLABORATIONS</p><p><Emoji text="✉️"/> chin_hsuen_lin@brown.edu</p>
+          <p>TALK TO ME!</p><p><Emoji text="✉️"/> chin_hsuen_lin@brown.edu</p>
           </div>
          </div>
       </div>

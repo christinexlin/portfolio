@@ -141,6 +141,19 @@ class Projects extends Component {
                 As a Computer Science student, I use my technical background to
                 inform my design decisions and bridge the gap between design and engineering.</h5>
             </div>
+
+            <FadeIn>
+            <Thumbnail
+                link="/raisesocial"
+                image={raisesocial2}
+                image2={raisesocial}
+                title="Raise Social"
+                category={['PRODUCT DESIGN']}
+                size="large"
+                description="Building a socially-conscious social media platform"
+            />
+            </FadeIn>
+            
             </FadeIn>
             <div className="projects-thumbnails">
             <FadeIn>
@@ -152,18 +165,6 @@ class Projects extends Component {
                 category={['PRODUCT DESIGN']}
                 size="large"
                 description="Simplifying the asylum application process"
-            />
-            </FadeIn>
-
-            <FadeIn>
-            <Thumbnail
-                link="/raisesocial"
-                image={raisesocial2}
-                image2={raisesocial}
-                title="Raise Social"
-                category={['PRODUCT DESIGN']}
-                size="large"
-                description="Building a socially-conscious social media platform"
             />
             </FadeIn>
 
