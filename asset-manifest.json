@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.830533d9.chunk.css",
-    "main.js": "/static/js/main.bc35c557.chunk.js",
-    "main.js.map": "/static/js/main.bc35c557.chunk.js.map",
+    "main.css": "/static/css/main.4d13f1a7.chunk.css",
+    "main.js": "/static/js/main.336a0335.chunk.js",
+    "main.js.map": "/static/js/main.336a0335.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e5fc83a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.e5fc83a6.js.map",
-    "static/js/2.e21156ca.chunk.js": "/static/js/2.e21156ca.chunk.js",
-    "static/js/2.e21156ca.chunk.js.map": "/static/js/2.e21156ca.chunk.js.map",
+    "static/js/2.ae32cd12.chunk.js": "/static/js/2.ae32cd12.chunk.js",
+    "static/js/2.ae32cd12.chunk.js.map": "/static/js/2.ae32cd12.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.60d2d97cb8974ca0d4c831d90ee7e474.js": "/precache-manifest.60d2d97cb8974ca0d4c831d90ee7e474.js",
+    "precache-manifest.d730032a757e815e455a98e18b7d8010.js": "/precache-manifest.d730032a757e815e455a98e18b7d8010.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.830533d9.chunk.css.map": "/static/css/main.830533d9.chunk.css.map",
-    "static/js/2.e21156ca.chunk.js.LICENSE.txt": "/static/js/2.e21156ca.chunk.js.LICENSE.txt",
+    "static/css/main.4d13f1a7.chunk.css.map": "/static/css/main.4d13f1a7.chunk.css.map",
+    "static/js/2.ae32cd12.chunk.js.LICENSE.txt": "/static/js/2.ae32cd12.chunk.js.LICENSE.txt",
     "static/media/1.png": "/static/media/1.334c139f.png",
     "static/media/10.png": "/static/media/10.e7f45eb2.png",
     "static/media/11.png": "/static/media/11.ef4f993c.png",
@@ -37,7 +37,7 @@
     "static/media/Participants.png": "/static/media/Participants.f237ba9d.png",
     "static/media/ResearchQuestions.png": "/static/media/ResearchQuestions.2e33ade0.png",
     "static/media/Theme1.png": "/static/media/Theme1.9fb389fe.png",
-    "static/media/Theme2.png": "/static/media/Theme2.ad6e5c18.png",
+    "static/media/adora.png": "/static/media/adora.7ab419a0.png",
     "static/media/bluenotes.png": "/static/media/bluenotes.61248913.png",
     "static/media/booking.png": "/static/media/booking.9fd82303.png",
     "static/media/faq-recording.gif": "/static/media/faq-recording.0d59d557.gif",
@@ -45,7 +45,6 @@
     "static/media/formally-thumbnail-2.png": "/static/media/formally-thumbnail-2.cb4b3a71.png",
     "static/media/formally-thumbnail.png": "/static/media/formally-thumbnail.31aaa7dd.png",
     "static/media/fullpage.png": "/static/media/fullpage.36c5740f.png",
-    "static/media/App.css": "/static/media/gradient-background-04.cf5d5a4c.png",
     "static/media/illustrations.png": "/static/media/illustrations.f47d3dfe.png",
     "static/media/interactionpage.png": "/static/media/interactionpage.b5340a26.png",
     "static/media/iterations.png": "/static/media/iterations.6615f00c.png",
@@ -54,6 +53,7 @@
     "static/media/landing2.png": "/static/media/landing2.d300e357.png",
     "static/media/modalnew.png": "/static/media/modalnew.9fe5b291.png",
     "static/media/moodboard.png": "/static/media/moodboard.c4bfac76.png",
+    "static/media/profile.png": "/static/media/profile.49577ecb.png",
     "static/media/profilepage.png": "/static/media/profilepage.a0ce6f52.png",
     "static/media/profilepagemockup.png": "/static/media/profilepagemockup.e524f248.png",
     "static/media/resource-full.png": "/static/media/resource-full.2e1fb15b.png",
@@ -65,8 +65,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e5fc83a6.js",
-    "static/js/2.e21156ca.chunk.js",
-    "static/css/main.830533d9.chunk.css",
-    "static/js/main.bc35c557.chunk.js"
+    "static/js/2.ae32cd12.chunk.js",
+    "static/css/main.4d13f1a7.chunk.css",
+    "static/js/main.336a0335.chunk.js"
   ]
 }
