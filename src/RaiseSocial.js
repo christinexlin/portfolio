@@ -16,7 +16,6 @@ import modal from './RaiseSocial/modalnew.png';
 //user research images
 import participants from './RaiseSocial/Participants.png';
 import theme1 from './RaiseSocial/Theme1.png';
-import theme2 from './RaiseSocial/Theme2.png';
 import insights from './RaiseSocial/Insights.png';
 import question from './RaiseSocial/ResearchQuestions.png';
 
@@ -25,7 +24,6 @@ function RaiseSocial(props) {
           <div className="project-page">
               <div className="navigation white links">
                 <NavLink basename={process.env.PUBLIC_URL} exact to="/" className="link" activeClassName="selected">PROJECTS</NavLink>
-                <NavLink basename={process.env.PUBLIC_URL} exact to="/about" className="link" activeClassName="selected">ABOUT</NavLink>
               </div>
 
               <Header
@@ -100,8 +98,7 @@ function RaiseSocial(props) {
               <Image type='single' color='#EFEFEF' width='1000px' padding='none'
               src={theme1} alt="user personas"/>
 
-              <Image type='single' color='#EFEFEF' width='1000px' padding='none'
-              src={theme2} alt="user personas"/>
+
 
               <Image type='single' color='#EFEFEF' width='1000px' padding='none'
               src={insights} alt="user personas"/>

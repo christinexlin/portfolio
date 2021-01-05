@@ -4,6 +4,8 @@
 
 h1 {
     font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: -1px;
 }
 
 h2 {
@@ -13,6 +15,7 @@ h2 {
 
 h4 {
     line-height: 2rem;
+    font-size: 1.3rem;
 }
 
 h5 {
@@ -31,6 +34,20 @@ body, html {
 
 img {
     width: 100%;
+}
+
+.landing a {
+    color: #C0C0C0;
+}
+
+.landing a:hover {
+    color: white;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #root {
@@ -91,7 +108,7 @@ img {
 
 @media screen and (max-width: 420px) {
     .landing h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .landing h2 {
         font-size: 1.6rem;
@@ -231,7 +248,7 @@ a:hover {
 }
 
 .footer {
-    background-color: black;
+    background-color: #171717;
     padding: 60px 0px 0px 0px;
     position: relative;
 }
@@ -271,19 +288,21 @@ a:hover {
 /* LANDING */
 
 .landing {
-    background-image: url('./Images/gradient-background-04.png');
-    background-size: cover;
-    color: white;
-    height: 100vh;
+    background-color: #171717;
+    padding-bottom: 40px;
+}
+
+.landing-1 {
+    height: 75vh;
+}
+
+.landing-1 p {
+    font-weight: 600;
+    text-align: center;
 }
 
 .landing div:first-child {
     z-index: 100;
-}
-
-.landing h2 {
-    font-weight: 500;
-    text-align: center;
 }
 
 .landing p {
@@ -305,6 +324,18 @@ a:hover {
     margin: 0px 0px 20px 0px;
 }
 
+.landing-text {
+    margin-top: -80px;
+    color: white;
+    max-width: 680px;
+    padding: 0px 40px;
+}
+
+.profile {
+    max-width: 200px;
+    padding: 20px 20px;
+}
+
 /* PROJECTS SECTION */
 
 .projects-text {
@@ -315,7 +346,7 @@ a:hover {
 
 .projects-text h2 {
     font-weight: 600;
-    line-height: 2.5rem;
+    line-height: 2rem;
 }
 
 .projects-text h5 {
@@ -331,8 +362,9 @@ a:hover {
 
 .projects {
     margin: auto;
-    padding: 130px 0px;
-    background-color: #F9F9F9;
+    padding-bottom: 60px;
+    background-color: #171717;
+    margin-top: -1px;
 }
 
 .thumbnail {
@@ -380,12 +412,14 @@ a:hover {
     font-size: 1.5rem;
     font-weight: 600;
     margin: 0px 24px 0px 0px;
+    color: white;
 }
 
 .thumbnail-title p {
     font-size: 1.1rem;
     font-weight: 400;
     margin-top: 2px;
+    color: white;
 }
 
 
@@ -504,7 +538,7 @@ canvas {
 }
 
 .about-page {
-    background-color: #FAFAFA;
+    background-color: #171717;
     padding: 70px 0px 40px 0px;
 }
 
@@ -545,9 +579,12 @@ canvas {
     animation: fadein 1s 1.5s both;
 }
 
-.about-text h4 {
-    font-weight: 400;
-    line-height: 2rem;
+.about-text p {
+    color: white;
+}
+
+.about-text h5 {
+    color: white;
 }
 
 /** PROJECT PAGE HEADER **/
@@ -570,7 +607,7 @@ canvas {
 
 .project-header {
     margin: 0px auto;
-    padding: 80px 0px 40px 0px;
+    padding: 80px 0px 10px 0px;
     max-width: 800px;
 }
 .project-header-text h1, .project-header-text h4 {
@@ -677,7 +714,7 @@ canvas {
     margin-bottom: 12px;
     font-weight: 700;
     letter-spacing: -1px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .text-div h6 {

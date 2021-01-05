@@ -12,6 +12,8 @@ import formally from './Formally/formally-thumbnail.png';
 import formally2 from './Formally/formally-thumbnail-2.png';
 import raisesocial from './RaiseSocial/landing.png';
 import raisesocial2 from './RaiseSocial/landing2.png';
+import profile from './profile.png'
+import adora from './adora.png'
 
 class Projects extends Component {
     constructor(props) {
@@ -22,46 +24,52 @@ class Projects extends Component {
     }
 
     sketch = (s) => {
-        let x = 0;
-        let y = 0;
-        let emojis = ["🤖","💥","⚡","🇯🇵","🤓","🍞"];
-        let captions = ["beep boop @ brown university","designing for change", "building playful products",
-        "learning japanese","constantly curious","big fan of bread"]
-        let currIndex = 0;
-        let currEmoji = emojis[currIndex];
+        let NUMSINES = 3; // how many of these things can we do at once?
+        let sines = new Array(NUMSINES); // an array to hold all the current angles
+        let rad; // an initial radius value for the central sine
+        let i; // a counter variable
+
+        let fund = 0.005; // the speed of the central sine
+        let ratio = 1.2; // what multiplier for speed is each additional sine?
+        let alpha = 100; // how opaque is the tracing system
 
       s.setup = () => {
         s.createCanvas(s.windowWidth, s.windowHeight);
-        s.noStroke();
-      }
-
-      s.mousePressed = () => {
-          currIndex += 1;
-          if (currIndex >= emojis.length) {
-              currIndex = 0;
-          }
-          currEmoji = emojis[currIndex];
+        rad = s.height / 5;
+        for (let i = 0; i<sines.length; i++) {
+            sines[i] = s.PI; // start EVERYBODY facing NORTH
+        }
       }
 
       s.draw = () => {
         s.clear();
-        s.resizeCanvas(s.windowWidth, s.windowHeight);
-        x = s.lerp(x, s.mouseX, 0.05);
-        y = s.lerp(y, s.mouseY, 0.05);
-        s.fill(255);
-        s.noStroke();
-        s.textSize(80);
-        s.textAlign(s.CENTER);
-        s.text(currEmoji, x, y);
-        s.textSize(16);
-        s.text(captions[currIndex], x, y+40);
+        s.resizeCanvas(s.windowWidth, s.windowHeight*0.75);
+        s.background(23, 23, 23); // clear screen if showing geometry
+        s.stroke(250, 250, 250);
+        s.noFill(); // don't fill
+
+        s.push(); // start a transformation matrix
+        s.translate(s.width / 2, s.height / 2); // move to middle of screen
+
+        for (let i = 0; i < sines.length; i++) {
+            let radius = rad / (i + 1); // radius for circle itself
+            s.rotate(sines[i]); // rotate circle
+            s.ellipse(0, 0, radius * 1.8, radius * 1.8); // if we're simulating, draw the sine
+            s.square(10, 10, radius, radius, 100, 100, 5);
+            s.push(); // go up one level
+            s.translate(0, radius); // move to sine edge
+            s.triangle(30, 75, 58, 20, 86, 75);
+            s.pop(); // go down one level
+            s.translate(0, radius); // move into position for next sine
+            sines[i] = (sines[i] + (fund + (fund * i * ratio))) % s.TWO_PI; // update angle based on fundamental
+        }
+
+        s.pop(); // pop down final transformation
       }
     }
 
     componentDidMount() {
-        if (!isMobile) {
-            this.myP5 = new p5(this.sketch, this.myRef.current);
-        }
+        this.myP5 = new p5(this.sketch, this.myRef.current);
     }
 
   render() {
@@ -107,53 +115,55 @@ class Projects extends Component {
 
           {isMobile ? null : <div className="p5" ref={this.myRef}> </div>}
 
-          <div className="navigation white links">
-            <NavLink basename={process.env.PUBLIC_URL} exact to="/" className="link" activeClassName="selected">PROJECTS</NavLink>
-            <NavLink basename={process.env.PUBLIC_URL} exact to="/about" className="link" activeClassName="selected">ABOUT</NavLink>
-          </div>
+          <div className="landing center">
+          <div>
 
-          <div className="section landing">
-            <div>
-                {isMobile ? null :
-                <motion.div
-                variants={pageVariant} initial='startText' animate='animateText'
-                transition={textTransition2} className="landing-click">
-                <i class="material-icons-outlined">mouse</i>
-                    <p>CLICK ANYWHERE TO GET TO KNOW ME</p>
-                </motion.div>}
+            <div className="landing-1 center">
                     <motion.div
-                    variants={pageVariant} initial='startText' animate='animateText'
-                    transition={textTransition1} className="landing-text">
-                    <h1>Christine Lin</h1>
-                    <h2>designer who codes</h2>
+                    variants={pageVariant} initial='startText' animate='animateText'>
+                    <div>
+                    <img src={profile} alt="profile photo" className="profile"/>
+                    <p>Christine Lin</p>
+                    </div>
                     </motion.div>
-                </div>
             </div>
+
+            <div className="landing-text">
+            <p>I'm a UX designer and senior at Brown University studying Computer Science.
+            I'm interested in HCI, computer graphics, and augmented reality. As a designer and engineer, I'm inspired by playful and delightful user experiences.
+            </p>
+            <br/>
+            <p>I'm currently on leave, designing the virtual campus tour experience @
+            <a href="https://www.adoraexperiences.com/index.html" target="_blank"
+            rel="noopener noreferrer"> Adora Experiences</a>.
+            View my resume <a target="_blank" rel="noopener noreferrer"
+            href="https://read.cv/christinelin">
+            here</a>.</p>
+            </div>
+
+            </div>
+            </div>
+
+
 
             <div className="section projects">
             <div className="centered">
             <FadeIn>
             <div className="projects-text">
-                <h2>Hi! I'm a product designer and front-end developer inspired
-                by playful and impactful experiences.</h2>
-                <br/>
-                <h5>I design to solve problems, encourage change, and spark joy.
-                As a Computer Science student, I use my technical background to
-                inform my design decisions and bridge the gap between design and engineering.</h5>
-            </div>
 
+            </div>
             <FadeIn>
             <Thumbnail
-                link="/raisesocial"
-                image={raisesocial2}
-                image2={raisesocial}
-                title="Raise Social"
-                category={['PRODUCT DESIGN']}
+                link="/adora"
+                image={adora}
+                image2={adora}
+                title="Adora"
+                category={['CASE STUDY', 'PRODUCT DESIGN']}
                 size="large"
-                description="Building a socially-conscious social media platform"
+                description="Designing a virtual campus tour web app to help students during COVID-19"
             />
             </FadeIn>
-            
+
             </FadeIn>
             <div className="projects-thumbnails">
             <FadeIn>
@@ -170,13 +180,13 @@ class Projects extends Component {
 
             <FadeIn>
             <Thumbnail
-                link="/bluenotes"
-                image={bluenotes}
-                image2={bluenotes}
-                title="Bluenotes"
-                category={['CASE STUDY', 'PRODUCT DESIGN']}
+                link="/raisesocial"
+                image={raisesocial2}
+                image2={raisesocial}
+                title="Raise Social"
+                category={['PRODUCT DESIGN']}
                 size="large"
-                description="Supporting new students at Brown as they adjust to campus life"
+                description="Fundraising through mentorship"
             />
             </FadeIn>
             </div>

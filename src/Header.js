@@ -14,7 +14,9 @@ class Header extends Component {
                 <div className="project-header-text">
                 <h1>{this.props.title}</h1>
                 <h4>{this.props.tagline}</h4>
-                {this.props.link != null && <a href={this.props.url}>{this.props.link}</a>}
+                {this.props.link != null &&
+                    <a target="_blank"
+                    rel="noopener noreferrer" href={this.props.url}>{this.props.link}</a>}
                 </div>
 
                 <div className='project-description'>

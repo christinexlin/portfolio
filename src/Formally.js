@@ -12,15 +12,14 @@ function Formally(props) {
           <div className="project-page">
               <div className="navigation black links">
                 <NavLink basename={process.env.PUBLIC_URL} exact to="/" className="link" activeClassName="selected">PROJECTS</NavLink>
-                <NavLink basename={process.env.PUBLIC_URL} exact to="/about" className="link" activeClassName="selected">ABOUT</NavLink>
               </div>
 
               <Header
               image={landing}
               title='UX Design Internship at Formally'
               tagline='Simplifying the asylum application process'
-              link='VIEW SITE (Coming Soon)'
-              url=''
+              link='VIEW SITE'
+              url='https://formally.us/resources'
               role='UX Designer and front-end developer'
               team='Briana Das, Lauren McMillen'
               timeline='4 weeks'
