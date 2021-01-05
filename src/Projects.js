@@ -69,7 +69,9 @@ class Projects extends Component {
     }
 
     componentDidMount() {
-        this.myP5 = new p5(this.sketch, this.myRef.current);
+        if (!isMobile) {
+            this.myP5 = new p5(this.sketch, this.myRef.current);
+        }
     }
 
   render() {
