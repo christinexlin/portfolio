@@ -24,32 +24,30 @@ class Projects extends Component {
     }
 
     sketch = (s) => {
-        let NUMSINES = 3; // how many of these things can we do at once?
+        let NUMSINES = 3;
         let sines = new Array(NUMSINES); // an array to hold all the current angles
         let rad; // an initial radius value for the central sine
-        let i; // a counter variable
-
+        let i;
         let fund = 0.005; // the speed of the central sine
-        let ratio = 1.2; // what multiplier for speed is each additional sine?
-        let alpha = 100; // how opaque is the tracing system
+        let ratio = 1.2; // multiplier for speed is each additional sine
 
-      s.setup = () => {
+    s.setup = () => {
         s.createCanvas(s.windowWidth, s.windowHeight);
         rad = s.height / 5;
         for (let i = 0; i<sines.length; i++) {
-            sines[i] = s.PI; // start EVERYBODY facing NORTH
+            sines[i] = s.PI; // start facing NORTH
         }
-      }
+    }
 
       s.draw = () => {
         s.clear();
-        s.resizeCanvas(s.windowWidth, s.windowHeight*0.75);
-        s.background(23, 23, 23); // clear screen if showing geometry
+        s.resizeCanvas(s.windowWidth, s.windowHeight*0.9);
+        s.background(23, 23, 23);
         s.stroke(250, 250, 250);
-        s.noFill(); // don't fill
+        s.noFill();
 
         s.push(); // start a transformation matrix
-        s.translate(s.width / 2, s.height / 2); // move to middle of screen
+        s.translate(s.width / 2, (s.height / 2) - 55); // move to middle of screen
 
         for (let i = 0; i < sines.length; i++) {
             let radius = rad / (i + 1); // radius for circle itself
@@ -63,7 +61,6 @@ class Projects extends Component {
             s.translate(0, radius); // move into position for next sine
             sines[i] = (sines[i] + (fund + (fund * i * ratio))) % s.TWO_PI; // update angle based on fundamental
         }
-
         s.pop(); // pop down final transformation
       }
     }
@@ -119,7 +116,6 @@ class Projects extends Component {
 
           <div className="landing center">
           <div>
-
             <div className="landing-1 center">
                     <motion.div
                     variants={pageVariant} initial='startText' animate='animateText'>
@@ -131,13 +127,13 @@ class Projects extends Component {
             </div>
 
             <div className="landing-text">
-            <p>I'm a UX designer and senior at Brown University studying Computer Science.
+            <p>Hello! I'm a UX designer and senior at Brown University studying Computer Science.
             I'm interested in HCI, computer graphics, and augmented reality. As a designer and engineer, I'm inspired by playful and delightful user experiences.
             </p>
             <br/>
             <p>I'm currently on leave, designing the virtual campus tour experience @
             <a href="https://www.adoraexperiences.com/index.html" target="_blank"
-            rel="noopener noreferrer"> Adora Experiences</a>.
+            rel="noopener noreferrer"> Adora Experiences</a> and experimenting with AR.
             View my resume <a target="_blank" rel="noopener noreferrer"
             href="https://read.cv/christinelin">
             here</a>.</p>
@@ -150,11 +146,9 @@ class Projects extends Component {
 
             <div className="section projects">
             <div className="centered">
-            <FadeIn>
-            <div className="projects-text">
 
-            </div>
-            <FadeIn>
+            <div className="projects-thumbnails">
+
             <Thumbnail
                 link="/adora"
                 image={adora}
@@ -162,13 +156,11 @@ class Projects extends Component {
                 title="Adora"
                 category={['CASE STUDY', 'PRODUCT DESIGN']}
                 size="large"
-                description="Designing a virtual campus tour web app to help students during COVID-19"
+                description="Redefining the college visit for high school students during COVID-19"
             />
-            </FadeIn>
 
-            </FadeIn>
-            <div className="projects-thumbnails">
             <FadeIn>
+
             <Thumbnail
                 link="/formally"
                 image={formally}
