@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import Thumbnail from './Thumbnail.js';
-import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { isMobile } from 'react-device-detect';
 import p5 from 'p5';
 import { AnimatePresence } from 'framer-motion';
 import FadeIn from './FadeIn.js';
 
-import bluenotes from './Bluenotes/bluenotes.png';
 import formally from './Formally/formally-thumbnail.png';
 import formally2 from './Formally/formally-thumbnail-2.png';
 import raisesocial from './RaiseSocial/landing.png';
 import raisesocial2 from './RaiseSocial/landing2.png';
 import profile from './profile.png'
 import adora from './adora.png'
+import arrow from './arrow.svg'
+import sign from './Experiments/sign.gif'
+import slow from './Experiments/slowpulsesunday.gif'
 
 class Projects extends Component {
     constructor(props) {
@@ -27,7 +28,6 @@ class Projects extends Component {
         let NUMSINES = 3;
         let sines = new Array(NUMSINES); // an array to hold all the current angles
         let rad; // an initial radius value for the central sine
-        let i;
         let fund = 0.005; // the speed of the central sine
         let ratio = 1.2; // multiplier for speed is each additional sine
 
@@ -120,7 +120,7 @@ class Projects extends Component {
                     <motion.div
                     variants={pageVariant} initial='startText' animate='animateText'>
                     <div>
-                    <img src={profile} alt="profile photo" className="profile"/>
+                    <img src={profile} alt="profile" className="profile"/>
                     <p>Christine Lin</p>
                     </div>
                     </motion.div>
@@ -142,13 +142,12 @@ class Projects extends Component {
             </div>
             </div>
 
-
-
             <div className="section projects">
             <div className="centered">
 
             <div className="projects-thumbnails">
-
+            <br/>
+            <h4>Projects</h4>
             <Thumbnail
                 link="/adora"
                 image={adora}
@@ -182,6 +181,47 @@ class Projects extends Component {
                 size="large"
                 description="Fundraising through mentorship"
             />
+            </FadeIn>
+            </div>
+
+            <div className="projects-thumbnails">
+            <div className="hline"></div>
+
+            <FadeIn>
+            <h4>Experiments</h4>
+            <br/>
+            <p>When I'm not designing, I enjoy experimenting with new ideas and making things with code.
+            I've worked on projects with Arduino, 3D printing, and front-end development.</p>
+            <br/>
+            </FadeIn>
+
+            <FadeIn>
+            <div className="row experiments-row">
+            <div className="col-sm-6">
+            <Thumbnail
+                link="https://medium.com/@chin_hsuen_lin/sign-of-change-5bc2b3de45a7"
+                image={sign}
+                title="Sign of Change"
+                category={['PRODUCT DESIGN']}
+                size="small"
+                description=""
+                icon={arrow}
+            />
+            </div>
+
+            <div className="col-sm-6">
+            <Thumbnail
+                link="https://slowpulsesunday.com/"
+                image={slow}
+                title="Slow Pulse Sunday"
+                category={['PRODUCT DESIGN']}
+                size="small"
+                description=""
+                icon={arrow}
+            />
+            </div>
+
+            </div>
             </FadeIn>
             </div>
 

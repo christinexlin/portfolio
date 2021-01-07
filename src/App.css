@@ -36,6 +36,10 @@ img {
     width: 100%;
 }
 
+.row {
+    margin: 0;
+}
+
 .landing a {
     color: #C0C0C0;
 }
@@ -356,8 +360,34 @@ a:hover {
 
 /* THUMBNAILS */
 
+.experiments-row {
+    max-width: 800px;
+}
+
+.experiments-row .col-sm-6 {
+    margin-left: -12px;
+}
+
+.projects-thumbnails h4 {
+    color: white;
+    font-weight: 600;
+}
+
+.projects-thumbnails p {
+    color: white;
+    max-width: 790px;
+}
+
+.hline {
+    width: 100%;
+    height:1px;
+    background: #4A4A4A;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
 .small {
-    width: 400px;
+    width: 100%;
 }
 
 .projects {
@@ -380,13 +410,26 @@ a:hover {
 
 .project-image {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 14px;
     overflow: hidden;
     max-width: 800px;
 }
 
-.project-image img {
+.large .project-image img {
     width: 100%;
+}
+
+.small .project-image {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.small .project-image img {
+    height: 110%;
+    width: auto;
 }
 
 .project-category {
@@ -408,10 +451,13 @@ a:hover {
     display: flex;
 }
 
-.thumbnail-title h5 {
-    font-size: 1.5rem;
+.large h5 {
     font-weight: 600;
     margin: 0px 24px 0px 0px;
+    color: white;
+}
+
+.small h5 {
     color: white;
 }
 
@@ -533,8 +579,8 @@ canvas {
 }
 
 #icon {
-    width: 17px;
-    margin: -1px 0px 0px 10px;
+    width: 14px;
+    margin: 0px 0px 0px 10px;
 }
 
 .about-page {
@@ -786,6 +832,13 @@ canvas {
     max-width: 450px;
     margin: auto;
     padding: 40px 0px;
+}
+
+.gif {
+    max-width: 680px;
+    box-shadow: -2px 2px 74px 2px rgba(0,0,0,0.20);
+-webkit-box-shadow: -2px 2px 74px 2px rgba(0,0,0,0.20);
+-moz-box-shadow: -2px 2px 74px 2px rgba(0,0,0,0.20);
 }
 
 .screenshot img {

@@ -24,7 +24,7 @@ class Image extends Component {
             <div className={this.props.padding + ' double container'}>
                 <div className='row'>
                     <div className='col-md-9'>
-                        <div className="mockup-container">
+                        <div className={'mockup-container ' + this.props.imageType}>
                         <img className={this.props.mockup} src={this.props.src} alt={this.props.alt}/>
                         </div>
                     </div>

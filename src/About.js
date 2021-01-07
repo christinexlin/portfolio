@@ -1,7 +1,6 @@
 import React from "react";
 import Emoji from 'react-emoji-render';
 import { NavLink } from 'react-router-dom';
-import diagram from './Images/venndiagram.png';
 
 function About(props) {
   return (

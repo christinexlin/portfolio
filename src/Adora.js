@@ -8,6 +8,8 @@ import schoolprofile from './Adora/schoolprofile.png';
 import solution1 from './Adora/solution-1.png';
 import solution2 from './Adora/solution-2.png';
 import solution3 from './Adora/solution-3.png';
+import tour from './Adora/tour.png';
+import map from './Adora/map.gif';
 
 function Adora(props) {
   return (
@@ -40,11 +42,13 @@ function Adora(props) {
               I conducted user + market research and worked on a cross-functional team,
               leading strategy discussions with input from multiple stakeholders.<br/><br/>
 
-              I iterated on designs, conducted usability testing on a high-fidelity,
+              Over the course of 3 months, I iterated on designs, conducted usability testing on a high-fidelity,
               interactive prototype, and worked closely with engineers during implementation.
               My final deliverable expanded Adora's product offerings, making the platform
               more accessible to students globally and making Adora more competitive in the
-              virtual campus tour market. Although my work is protected under NDA, you can contact me at
+              virtual campus tour market.<br/><br/>
+
+              Although my work is protected under NDA, you can contact me at
               chin_hsuen_lin@brown.edu for details.
               </p>
               </Text>
@@ -77,6 +81,23 @@ function Adora(props) {
               </p>
               </Image>
 
+              <Image type='double' color='#ffffff' width='300px'
+              padding='none' src={tour} alt="user personas">
+              <h5>Take a personalized or pre-made tour</h5><br/>
+              <p>After taking a personalized tour questionnaire,
+              Adora will generate a unique tour tailored to you and your interests.
+              We also have official pre-made tours curated by the university's Admission office.
+              </p>
+              </Image>
+
+              <Image type='double' color='#ffffff' width='300px'
+              padding='none' src={map} alt="user personas" imageType='gif'>
+              <h5>Explore stops on campus</h5><br/>
+              <p>If you don't want to take a tour, you can freely explore all
+              existing stops on the interactive campus map.
+              </p>
+              </Image>
+
               <Image type='double' color='#ffffff' width='800px'
               padding='none' src={solution3} alt="user personas">
               <h5>Browse multiple schools</h5><br/>
@@ -86,9 +107,12 @@ function Adora(props) {
               </Image>
 
               <Text heading="Reflection">
-              <p>Working as a designer an early-stage startup, I learned how to work with multiple stakeholders such as
-              high school students, parents, and universities, lead conversations around business strategy,
-              and explain my design decisions during regular critiques.
+              <p>Working as a designer an early-stage startup, I learned how to balance the needs of multiple
+              stakeholders with user needs, lead conversations around business strategy, and design scalable
+              solutions that covered multiple edge cases and would work with a variety of schools.
+              As the designer for Adora's first web
+              application, I also learned how to refine and expand an existing design system, explain
+              my design decisions during regular critiques, and work with engineers during implementation.
               <br/><br/>
               </p>
               </Text>
