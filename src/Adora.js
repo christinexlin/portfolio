@@ -8,6 +8,15 @@ import schoolprofile from './Adora/schoolprofile.png';
 import solution1 from './Adora/solution-1.png';
 import solution2 from './Adora/solution-2.png';
 import solution3 from './Adora/solution-3.png';
+import process from './Adora/design.png';
+import quotes from './Adora/quotes.png';
+
+import challenge1 from './Adora/challenge1-1.png';
+import challenge1_2 from './Adora/challenge1-2.png';
+
+import challenge2 from './Adora/challenge2.png';
+import challenge3 from './Adora/challenge3.png';
+
 import tour from './Adora/tour.png';
 import map from './Adora/map.gif';
 
@@ -15,7 +24,7 @@ function Adora(props) {
   return (
           <div className="project-page">
               <div className="navigation black links">
-                <NavLink basename={process.env.PUBLIC_URL} exact to="/" className="link" activeClassName="selected">PROJECTS</NavLink>
+                <NavLink exact to="/" className="link" activeClassName="selected">PROJECTS</NavLink>
               </div>
 
               <Header
@@ -57,8 +66,10 @@ function Adora(props) {
               <p>As a result of COVID-19, high school students are no longer able to go on
               in-person campus tours. The pandemic has halted campus visit programs globally,
               posing a challenge for prospective students who depend on tours to make more informed
-              college decisions. My goal was to design a virtual tour experience that
-              felt authentic, captured the campus atmosphere, and provided human connection.
+              college decisions. We want to solve this problem at Adora through a web app
+              for high school students to take virtual campus tours. We decided to build a web app
+              because Adora already has an existing mobile app, but both universities and students
+              have requested a web version due to ease of access.
               </p>
               </Text>
 
@@ -70,6 +81,86 @@ function Adora(props) {
 
               <Image type='single' color='#ffffff' width='900px'
               padding='top' src={solution1} alt="user personas"/>
+
+              <Text heading="Design Process">
+              </Text>
+
+              <Image type='single' color='#f9f9f9' width='600px'
+              padding='top' src={process} alt="design process"/>
+
+              <Text heading="How did we define succcess?">
+              <ul>
+                <li>Number of users who start a tour</li>
+                <li>Number of users who finish a tour</li>
+                <li>Number of users who complete our contact info form</li>
+              </ul>
+              </Text>
+
+              <Text heading="What are the needs and pain points of our users?">
+              I led a user research study where we interviewed 4 high school students,
+              2 parents, and 3 university customers. From affinity mapping, I narrowed
+              down my design focus to 3 major themes: campus vibe, authenticity, and
+              human connection.
+              </Text>
+
+              <Image type='single' color='#f9f9f9' width='1100px'
+              padding='none' src={quotes} alt="design process"/>
+
+              <Text heading="Challenges">
+              </Text>
+
+              <Image type='single' color='#f9f9f9' width='1000px'
+              padding='top' src={challenge1} alt="design process"/>
+
+              <Text heading="Collecting student information">
+              <p>When taking a campus tour or participating in a campus visit program,
+              historically universities have collected a visitor's basic information such as
+              their name, whether they are a student or a parent, and their email address.
+              I weighed the pros and cons of 3 different user flows: showing the data collection screen
+              upon landing on Adora's web app, before the start of
+              a tour, and after completing a tour. I decided to show the data collection form right
+              before starting a tour because this was when user data would be most relevant to a school
+              and it was less obtrusive, allowing users to explore our site and view our content before
+              asking for their information. This also ensured the form would be seen by all students
+              taking a tour, as there is potential dropoff during a tour.
+              </p></Text>
+
+              <Image type='single' color='#ffffff' width='900px'
+              padding='none' src={challenge1_2} alt="design process"/>
+
+              <Text>
+              <p>I iterated on multiple ways of collecting student information
+              before a tour, ranging
+              from most obtrusive (full page) to least obtrusive (modal). Although
+              the full page was the most obtrusive, this was a tradeoff I decided to make
+              because collecting this information is key for schools and small modals or popups
+              are often skipped. Displaying the form side-by-side with other information such as
+              the tour overview was also too distracting and competed for the user's attention.
+              To alleviate the interruption of the user experience of
+              taking a tour, I modified the copy of the form to be more friendly. To ensure
+              this screen was not unexpected, I also changed previous screens to say "Take a tour"
+              instead of "Start Tour".
+              </p>
+              </Text>
+
+              <Image type='single' color='#f9f9f9' width='1000px'
+              padding='top' src={challenge2} alt="design process"/>
+
+              <Text heading="Designing the tour experience">
+              <p>Since Adora's platform contains multiple universities, it was important
+              to design a scalable system that would work for all schools. The content
+              associated with stops can vary widely, from only a single image to many images,
+              student testimonials, or videos. The text content associated with a stop
+              can also vary greatly in length. To solve this problem, I designed the stop
+              page to include separate content sections for a media gallery, student testimonials,
+              and text content. These sections allowed a stop page to adapt to various types of content
+              while still displaying the most important content and keeping the page easy to navigate.
+              </p>
+              </Text>
+
+              <Image type='single' color='#ffffff' width='1000px'
+              padding='none' src={challenge3} alt="design process"/>
+
 
               <Image type='double' color='#ffffff' width='800px'
               padding='none' src={solution2} alt="user personas">
