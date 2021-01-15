@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.8759cd05.chunk.css",
-    "main.js": "/static/js/main.5220d8df.chunk.js",
-    "main.js.map": "/static/js/main.5220d8df.chunk.js.map",
+    "main.js": "/static/js/main.2630dccb.chunk.js",
+    "main.js.map": "/static/js/main.2630dccb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e5fc83a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.e5fc83a6.js.map",
-    "static/js/2.60a348cd.chunk.js": "/static/js/2.60a348cd.chunk.js",
-    "static/js/2.60a348cd.chunk.js.map": "/static/js/2.60a348cd.chunk.js.map",
+    "static/js/2.d89788f4.chunk.js": "/static/js/2.d89788f4.chunk.js",
+    "static/js/2.d89788f4.chunk.js.map": "/static/js/2.d89788f4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.12d63c9ef6b71f7a3b508b9064e447c8.js": "/precache-manifest.12d63c9ef6b71f7a3b508b9064e447c8.js",
+    "precache-manifest.bcdce08f62155743b56c0fe45da4f03c.js": "/precache-manifest.bcdce08f62155743b56c0fe45da4f03c.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.8759cd05.chunk.css.map": "/static/css/main.8759cd05.chunk.css.map",
-    "static/js/2.60a348cd.chunk.js.LICENSE.txt": "/static/js/2.60a348cd.chunk.js.LICENSE.txt",
+    "static/js/2.d89788f4.chunk.js.LICENSE.txt": "/static/js/2.d89788f4.chunk.js.LICENSE.txt",
     "static/media/1.png": "/static/media/1.334c139f.png",
     "static/media/10.png": "/static/media/10.e7f45eb2.png",
     "static/media/11.png": "/static/media/11.ef4f993c.png",
@@ -41,6 +41,11 @@
     "static/media/arrow.svg": "/static/media/arrow.c593a1b3.svg",
     "static/media/bluenotes.png": "/static/media/bluenotes.61248913.png",
     "static/media/booking.png": "/static/media/booking.9fd82303.png",
+    "static/media/challenge1-1.png": "/static/media/challenge1-1.d1ac06ba.png",
+    "static/media/challenge1-2.png": "/static/media/challenge1-2.b7a22dd1.png",
+    "static/media/challenge2.png": "/static/media/challenge2.2dae4156.png",
+    "static/media/challenge3.png": "/static/media/challenge3.c93576fa.png",
+    "static/media/design.png": "/static/media/design.efc78d2e.png",
     "static/media/faq-recording.gif": "/static/media/faq-recording.0d59d557.gif",
     "static/media/filterui.png": "/static/media/filterui.bd02e7bc.png",
     "static/media/formally-thumbnail-2.png": "/static/media/formally-thumbnail-2.cb4b3a71.png",
@@ -58,9 +63,10 @@
     "static/media/profile.png": "/static/media/profile.49577ecb.png",
     "static/media/profilepage.png": "/static/media/profilepage.a0ce6f52.png",
     "static/media/profilepagemockup.png": "/static/media/profilepagemockup.e524f248.png",
+    "static/media/quotes.png": "/static/media/quotes.95209d8c.png",
     "static/media/resource-full.png": "/static/media/resource-full.2e1fb15b.png",
     "static/media/resource-tiled.png": "/static/media/resource-tiled.8dffc1b4.png",
-    "static/media/schoolprofile.png": "/static/media/schoolprofile.b210ef80.png",
+    "static/media/schoolprofile.png": "/static/media/schoolprofile.703d2e99.png",
     "static/media/screenshot.png": "/static/media/screenshot.72e23a8c.png",
     "static/media/sign.gif": "/static/media/sign.cba7806a.gif",
     "static/media/slowpulsesunday.gif": "/static/media/slowpulsesunday.d7a019e8.gif",
@@ -73,8 +79,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e5fc83a6.js",
-    "static/js/2.60a348cd.chunk.js",
+    "static/js/2.d89788f4.chunk.js",
     "static/css/main.8759cd05.chunk.css",
-    "static/js/main.5220d8df.chunk.js"
+    "static/js/main.2630dccb.chunk.js"
   ]
 }
