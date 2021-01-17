@@ -29,11 +29,11 @@ function RaiseSocial(props) {
               <Header
               image={landing}
               title='Raise Social'
-              tagline='Building a socially-conscious social media platform'
+              tagline='Fundraising through mentorship'
               url=''
               role='Product Designer'
-              team="Cara Vo, Eashan Mathur, Mia O'Brien, Dennis Bae, Sai Harika, Joshua Kaplan"
-              timeline='July-Sept 2020 (9 weeks)'
+              team="Cara Vo (PM), Eashan Mathur (Engineer), Mia O'Brien (Engineer), Dennis Bae (Engineer), Sai Harika (Engineer), Joshua Kaplan (Engineer)"
+              timeline='July-Sept 2020'
               />
 
               <DisplayText color='white' height=''

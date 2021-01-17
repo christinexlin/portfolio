@@ -128,12 +128,13 @@ class Projects extends Component {
 
             <div className="landing-text">
             <p>Hello! I'm a UX designer and senior at Brown University studying Computer Science.
-            I'm interested in HCI, computer graphics, and augmented reality. As a designer and engineer, I'm inspired by playful and delightful user experiences.
+            I'm interested in HCI, augmented reality, and using tech for social good.
+            As a designer and engineer, I'm inspired by playful and delightful user experiences.
             </p>
             <br/>
             <p>I'm currently on leave, designing the virtual campus tour experience @
             <a href="https://www.adoraexperiences.com/index.html" target="_blank"
-            rel="noopener noreferrer"> Adora Experiences</a> and experimenting with AR.
+            rel="noopener noreferrer"> Adora Experiences</a>.
             View my resume <a target="_blank" rel="noopener noreferrer"
             href="https://read.cv/christinelin">
             here</a>.</p>
@@ -155,7 +156,7 @@ class Projects extends Component {
                 title="Adora"
                 category={['CASE STUDY', 'PRODUCT DESIGN']}
                 size="large"
-                description="Redefining the college visit for high school students during COVID-19"
+                description="Redefining the college visit during COVID-19"
             />
 
             <FadeIn>
@@ -167,7 +168,7 @@ class Projects extends Component {
                 title="Formally"
                 category={['PRODUCT DESIGN']}
                 size="large"
-                description="Simplifying the asylum application process"
+                description="Simplifying the U.S. asylum application process"
             />
             </FadeIn>
 

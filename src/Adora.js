@@ -55,10 +55,7 @@ function Adora(props) {
               interactive prototype, and worked closely with engineers during implementation.
               My final deliverable expanded Adora's product offerings, making the platform
               more accessible to students globally and making Adora more competitive in the
-              virtual campus tour market.<br/><br/>
-
-              Although my work is protected under NDA, you can contact me at
-              chin_hsuen_lin@brown.edu for details.
+              virtual campus tour market.
               </p>
               </Text>
 
